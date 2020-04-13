@@ -1,13 +1,15 @@
-module.export = {
+module.exports = {
+    devServer:{
+        disableHostCheck: true,
+    },
     configureWebpack:{
-        reserve:{
-            exceptions:['css', 'js', 'vue'],
+        resolve:{
             alias: {
                 '@': 'src',
                 'common': '@/common',
                 'components': '@/components',
                 'network': '@/network',
-                'views': '@/views',
+                'views': '@/views'
             }
         }
     }
